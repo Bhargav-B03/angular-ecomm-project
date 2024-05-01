@@ -1,0 +1,51 @@
+{
+  "seller": [
+    {
+      "id": "8df3",
+      "name": "bhargav bakrania",
+      "email": "bhargav@test.com",
+      "password": "bhargavb14"
+    },
+    {
+      "id": "03e1",
+      "name": "ankit ganatra",
+      "email": "ankit@test.com",
+      "password": "ankitg34"
+    },
+    {
+      "id": "4d94",
+      "name": "Brandon",
+      "password": "brandon123",
+      "email": "brandon@eich.com"
+    },
+    {
+      "id": "1ef4",
+      "name": "James",
+      "password": "james345",
+      "email": "james@potter.com"
+    },
+    {
+      "id": "4fa3",
+      "name": "Sagar Senjaliya",
+      "password": "sagar@345",
+      "email": "sagar@test.com"
+    },
+    {
+      "id": "6084",
+      "name": "Bhargav",
+      "password": "bhargav",
+      "email": "h@h.com"
+    }
+  ],
+  "products": [
+    {
+      "id": "0d07",
+      "productName": "Redmi Note 8 Pro",
+      "productPrice": "19000",
+      "productColor": "White",
+      "productCategory": "Mobile Phone",
+      "productDescription": "dg",
+      "productImage": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQDxAPEBUVFhUVFQ8PDw8PFRUVFxUWGBUVFRUYHSggGBolGxUWITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQFy0dHSIvLS0tLSstNy0uLS0tKy0rLS0tNy0rLTctLS0tKy0tLS03Ky0tLS0tLS0tLSstKy0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQEDBAYHAgj/xABNEAACAQIBAw4ICQoHAQAAAAAAAQIDBBEFIXEGEiIjMVFhcoGRobGywQcyNEFzs7TRExQkUmJjgpLwM0JUg4STlKLC4UNEU2TS1PEV/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAECAwQFBv/EADERAQACAQEECAQGAwAAAAAAAAABAgMRBCExcRIiIzJRkbHwQUJhgQUUMzRT0RMkwf/aAAwDAQACEQMRAD8A7iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFq6uI04SqTetjCLlKT8ySxbAug16MrmslOdWVrGWeNCjGm6iXm+FnNSWu31FLDcxe6VeTpee4un+0SXVgBsANd+IP/Xuv4ioUdl9fdfxFQDYwa38T+vuv4ioefiv193/ABFQnRGrZgcT1dau6lrcK0s53M6iwU5yq1Kuyax1kYa5LMni29zHgZrtXVjldy1uuuk35ld0Ybufc1rw5zSmHJk7lZnlBq+jgfOM9VWVorGU7tft1LuiUeq3Kut12vu8McMfjtLd+6afk8/8dvKUvo8HzHceEHKFOWtqVb2DedY3MXjoahgzxPwjXq3bi8/iV/wMLVms6TGkj6fB85W2qbLFRKUXe4Pc115Sh0OOKLq1Q5Ybwxu8c/8AnqPmeD82+axs2afknyH0QD54nqhywt13f8fS9xkUfCPlOzcZXEKkqbaxjW1taL4PhYybi+QrbBlrG"
+    }
+  ]
+}
