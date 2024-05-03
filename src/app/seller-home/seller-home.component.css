@@ -1,0 +1,54 @@
+table{
+    text-align: left;
+    color: blueviolet;
+    border-collapse: collapse;
+}
+
+table td, table th {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    min-height: 160px;
+}
+
+table td {
+    color: black;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.product-list{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.del-btn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.edit-btn {
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.del-btn:hover, .edit-btn:hover {
+    color: white;
+    background-color: blueviolet;
+    transition: 0.3s;
+}

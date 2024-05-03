@@ -1,8 +1,13 @@
 <nav class="nav">
     <h1> <a routerLink="/">E-Commerce</a></h1>
     <div *ngIf="this.menuType === 'default'" class="nav-search">
-        <input type="text" placeholder="Search for Products" />
-        <button>Search</button>
+        <input #searchInput type="text" (keyup)="searchProduct($event)" (blur)="hideResult()" placeholder="Search for Products" />
+        <button (click)="submitSearch(searchInput.value)">Search</button>
+        <ul class="suggested-results" *ngIf="searchResult">
+            <li *ngFor="let item of searchResult">
+                <a>{{item.productName}}</a>
+            </li>
+        </ul>
     </div>
     <div [ngSwitch]="this.menuType">
         <ul *ngSwitchCase="'default'">
@@ -12,7 +17,7 @@
             <li><a href="#">Cart(0)</a></li>
         </ul>
         <ul *ngSwitchCase="'seller'">
-            <li><a routerLink="">Product List</a></li>
+            <li><a routerLink="seller-home">Product List</a></li>
             <li><a routerLink="seller-add-product">Add Product</a></li>
             <li><a (click)="logout()">Logout</a></li>
             <li><a href="#">{{sellerName | titlecase}}</a></li>
