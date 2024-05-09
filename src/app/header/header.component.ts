@@ -14,7 +14,9 @@ import { Product } from '../data-type';
 export class HeaderComponent implements OnInit {
   menuType: string = '';
   sellerName: string = '';
+  userName: string = '';
   searchResult: undefined | Product[];
+  cartItems: number = 0;
 
   constructor(private router: Router, private productService: ProductService) { }
 
@@ -25,16 +27,37 @@ export class HeaderComponent implements OnInit {
           this.menuType = 'seller';
           this.sellerName = JSON.parse(localStorage.getItem('seller')!)[0].name
         }
+        if (localStorage.getItem('user')) {
+          this.menuType = 'user';
+          this.userName = JSON.parse(localStorage.getItem('user')!).name
+        }
         else {
           this.menuType = 'default';
         }
       }
     })
+
+    let localCart = localStorage.getItem('localCart');
+    if (localCart) {
+      this.cartItems = JSON.parse(localCart).length;
+    }
+    this.productService.cartDataEmit.subscribe(result => {
+      this.cartItems = result.length;
+    })
+    let user = localStorage.getItem('user');
+    let userId = user && JSON.parse(user).id;
+    this.productService.getCartList(userId);
   }
 
   logout() {
     localStorage.removeItem('seller');
     this.router.navigate(['/']);
+  }
+
+  userLogOut() {
+    localStorage.removeItem('user');
+    this.router.navigate(['/user-auth']);
+    this.productService.cartDataEmit.emit([]);
   }
 
   searchProduct(query: KeyboardEvent) {

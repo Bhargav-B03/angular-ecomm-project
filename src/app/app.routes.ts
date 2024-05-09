@@ -7,6 +7,10 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import { SearchComponent } from './search/search.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { MyOrdersComponent } from './my-orders/my-orders.component';
 
 export const routes: Routes = [
     {
@@ -39,5 +43,21 @@ export const routes: Routes = [
     {
         path: "details/:productId",
         component: ProductDetailComponent
+    },
+    {
+        path: "user-auth",
+        component: UserAuthComponent
+    },
+    {
+        path: 'cart-page',
+        component: CartPageComponent
+    },
+    {
+        path: 'checkout',
+        component: CheckoutComponent
+    },
+    {
+        path: 'my-orders',
+        component: MyOrdersComponent
     }
 ];

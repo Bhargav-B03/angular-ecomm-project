@@ -35,6 +35,12 @@
       "name": "Bhargav",
       "password": "bhargav",
       "email": "h@h.com"
+    },
+    {
+      "id": "e758",
+      "name": "Bread",
+      "password": "bread",
+      "email": "bb@b.com"
     }
   ],
   "products": [
@@ -91,6 +97,50 @@
       "productCategory": "T-shirt",
       "productDescription": "Simple t-shirt from DNMX",
       "productImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Qp0q8VVJPJv1kvTTOU1iq6Bv31wp6y1ohqvyzrplXw&s"
+    },
+    {
+      "productName": "Redmi Note 8 Pro",
+      "productPrice": "29000",
+      "productColor": "White",
+      "productCategory": "Mobile Phone",
+      "productDescription": "some",
+      "productImage": "https://m.media-amazon.com/images/I/314J9pAsXyL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": "a982"
+    }
+  ],
+  "users": [
+    {
+      "id": "e430",
+      "name": "bhargav",
+      "email": "bb@b.com",
+      "password": "bb123"
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "id": "3107",
+      "email": "bb@b.com",
+      "address": "dfgjh",
+      "contact": "7777",
+      "userId": "e430",
+      "totalPrice": 82100
+    },
+    {
+      "id": "738d",
+      "email": "h@h.com",
+      "address": "dfgjh",
+      "contact": "7777",
+      "userId": "e430",
+      "totalPrice": 48100
+    },
+    {
+      "id": "4fec",
+      "email": "test@test.com",
+      "address": "dfgjh",
+      "contact": "7777",
+      "userId": "e430",
+      "totalPrice": 699
     }
   ]
 }

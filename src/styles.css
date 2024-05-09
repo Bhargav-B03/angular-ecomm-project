@@ -27,6 +27,7 @@ body{
     height: 35px;
     border: 1px solid blueviolet;
     cursor: pointer;
+    color: blueviolet;
 }
 
 .error-p{
@@ -35,6 +36,7 @@ body{
 
 .success-p {
     color: green;
+    text-align: center;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -46,4 +48,19 @@ body{
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.418);
     border-radius: 5px;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.invalid-input {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    margin-top: -15px;
+}
+
+.max-width {
+    width: 100%;
 }
